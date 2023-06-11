@@ -8,6 +8,7 @@ interface PizzaItemProps {
     updatePizza: (newPizza: Pizza) => void;
     deletePizza: (id: number) => void
 }
+
 const PizzaItem: FC<PizzaItemProps> = ({pizza, updatePizza, deletePizza}) => {
 
     const [edit, setEdit] = useState<boolean>(false);
